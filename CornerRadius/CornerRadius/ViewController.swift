@@ -9,15 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var bottomView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+     
+        topView.layer.cornerRadius = 20.0
+        topView.layer.masksToBounds = true
+        bottomView.layer.cornerRadius = 20.0
+        bottomView.layer.masksToBounds = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+     
     }
 
 
